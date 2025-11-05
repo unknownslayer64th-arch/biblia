@@ -1,0 +1,35 @@
+{
+  "Biblia": {
+    "Stary Testament": {
+      "Rodzaju": {
+        "1": {
+          "1": "Na początku Bóg stworzył niebo i ziemię.",
+          "2": "A ziemia była pustkowiem i chaosem...",
+          "3": "I rzekł Bóg: «Niechaj się stanie światłość!»..."
+        },
+        "2": {
+          "1": "Tak oto zostały ukończone niebo i ziemia..."
+        }
+      },
+      "Wyjścia": {
+        "1": {
+          "1": "Oto imiona synów Izraela, którzy przybyli do Egiptu..."
+        }
+      }
+    },
+    "Nowy Testament": {
+      "Mateusza": {
+        "1": {
+          "1": "Rodowód Jezusa Chrystusa, syna Dawida, syna Abrahama.",
+          "2": "Abraham był ojcem Izaaka..."
+        }
+      },
+      "Jana": {
+        "1": {
+          "1": "Na początku było Słowo, a Słowo było u Boga, i Bogiem było Słowo.",
+          "2": "Ono było na początku u Boga."
+        }
+      }
+    }
+  }
+}
