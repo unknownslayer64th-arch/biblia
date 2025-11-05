@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biblia Po Polsku - Czytaj Online</title>
+    <meta name="description" content="Cała Biblia po polsku online. Czytaj Pismo Święte Starego i Nowego Testamentu.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Dodanie ikony -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📖 Biblia Po Polsku</h1>
+            <div class="controls">
+                <select id="testamentSelect">
+                    <option value="">Wybierz testament...</option>
+                    <option value="stary">Stary Testament</option>
+                    <option value="nowy">Nowy Testament</option>
+                </select>
+                <select id="ksiegaSelect">
+                    <option value="">Wybierz księgę...</option>
+                </select>
+                <select id="rozdzialSelect">
+                    <option value="">Rozdział...</option>
+                </select>
+            </div>
+        </header>
+
+        <main class="content">
+            <div id="bibliaContent" class="biblia-content">
+                <div class="welcome">
+                    <h2>Witaj w Biblii Online</h2>
+                    <p>Wybierz testament, księgę i rozdział aby rozpocząć czytanie.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>66</h3>
+                            <p>Ksiąg</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1,189</h3>
+                            <p>Rozdziałów</p>
+                        </div>
+                        <div class="stat">
+                            <h3>31,102</h3>
+                            <p>Wersetów</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Biblia Online - Hostowane na GitHub Pages</p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
