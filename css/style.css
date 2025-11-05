@@ -1,9 +1,196 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
-.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-.header { background: #2c3e50; color: white; padding: 20px; border-radius: 10px; margin-bottom: 20px; }
-.header h1 { text-align: center; margin-bottom: 20px; }
-.controls { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
-select { padding: 10px; border: none; border-radius: 5px; min-width: 200px; }
-.content { background: white; padding: 20px; border-radius: 10px; }
-.welcome { text-align: center; padding: 40px 20px; }
+/* === Reset stylów === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Ustawienia ogólne === */
+body {
+  font-family: "Noto Serif", Georgia, serif;
+  background-color: #f8f8f8;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Nagłówek === */
+header {
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+  color: #fff;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+header .search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header input[type="text"] {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+header button.theme-toggle {
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header button.theme-toggle:hover {
+  background: #fff;
+  color: #2c3e50;
+}
+
+/* === Główna zawartość === */
+main {
+  display: flex;
+  flex: 1;
+}
+
+/* === Lewy panel – lista ksiąg === */
+aside {
+  width: 250px;
+  background: #fff;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+aside h2 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+aside ul {
+  list-style: none;
+}
+
+aside li {
+  padding: 6px 0;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+aside li:hover {
+  color: #c9a227;
+  transform: translateX(4px);
+}
+
+/* === Prawy panel – tekst Biblii === */
+section {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.verse {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.verse-number {
+  font-weight: bold;
+  color: #c9a227;
+  margin-right: 6px;
+}
+
+/* === Przyciski nawigacyjne === */
+.nav-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-buttons button {
+  padding: 8px 15px;
+  border: none;
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #c9a227;
+  color: #2c3e50;
+}
+
+/* === Stopka === */
+footer {
+  background: #f0f0f0;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* === Tryb ciemny === */
+body.dark {
+  background: #1c1c1c;
+  color: #eee;
+}
+
+body.dark header {
+  background: linear-gradient(90deg, #111, #222);
+}
+
+body.dark aside {
+  background: #222;
+  border-color: #444;
+}
+
+body.dark section {
+  background: #1c1c1c;
+}
+
+body.dark .verse-number {
+  color: #f4d03f;
+}
+
+body.dark .nav-buttons button {
+  background: #444;
+  color: #f4f4f4;
+}
+
+body.dark footer {
+  background: #222;
+  color: #aaa;
+}
+
+/* === Responsywność === */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+}
